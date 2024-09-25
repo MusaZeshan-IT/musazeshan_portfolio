@@ -13,7 +13,7 @@ const Work = () => {
     return (
         <section className='px-10'>
             <div className='flex flex-col items-center'>
-                <h1 className='text-[45px] leading-[1.05] font-bold text-center text-blue-700'>
+                <h1 className='lg:text-[45px] md:text-[40px] sm:text-[35px] xs:text-[30px] text-[28px] leading-[1.05] font-bold text-center text-blue-700'>
                     My Recent Work
                 </h1>
                 <div className='mt-12 flex gap-x-4 bg-gray-200 w-fit p-2 rounded-full'>

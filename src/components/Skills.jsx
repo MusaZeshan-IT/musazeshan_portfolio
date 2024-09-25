@@ -25,7 +25,7 @@ const Skills = () => {
     return (
         <section className="bg-white px-36 py-12">
             <div className="mx-auto text-center">
-                <h2 className="text-4xl font-bold text-blue-700 mb-6">My Skills</h2>
+                <h2 className="lg:text-[45px] md:text-[40px] sm:text-[35px] xs:text-[30px] text-[28px] leading-[1.05] font-bold text-blue-700 mb-6">My Skills</h2>
                 <div className='flex justify-center'>
                     <p className="text-gray-600 mb-16 text-center w-[530px]">
                         With 2+ years in full stack development, I craft seamless, scalable solutions from front-end to back-end.
