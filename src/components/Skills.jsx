@@ -23,11 +23,11 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section className="bg-white px-36 py-12">
+        <section className="bg-white 2xl:px-28 xl-custom:px-20 xl:px-16 lg-custom:px-14 lg:px-10 md:px-8 sm-custom:px-24 sm:px-16 xs-custom:px-14 xs:px-10 2xs-custom:px-8 2xs:px-6 px-4 py-12">
             <div className="mx-auto text-center">
                 <h2 className="lg:text-[45px] md:text-[40px] sm:text-[35px] xs:text-[30px] text-[28px] leading-[1.05] font-bold text-blue-700 mb-6">My Skills</h2>
                 <div className='flex justify-center'>
-                    <p className="text-gray-600 mb-16 text-center w-[530px]">
+                    <p className="text-gray-600 xs:text-base 2xs-custom:text-sm text-[13px] mb-16 text-center w-[530px]">
                         With 2+ years in full stack development, I craft seamless, scalable solutions from front-end to back-end.
                     </p>
                 </div>

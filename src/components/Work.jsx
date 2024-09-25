@@ -11,28 +11,28 @@ const Work = () => {
     });
 
     return (
-        <section className='px-10'>
+        <section className='2xl:px-28 xl-custom:px-20 xl:px-16 lg-custom:px-14 lg:px-10 md:px-8 sm-custom:px-24 sm:px-16 xs-custom:px-14 xs:px-10 2xs-custom:px-8 2xs:px-6 px-4'>
             <div className='flex flex-col items-center'>
                 <h1 className='lg:text-[45px] md:text-[40px] sm:text-[35px] xs:text-[30px] text-[28px] leading-[1.05] font-bold text-center text-blue-700'>
                     My Recent Work
                 </h1>
-                <div className='mt-12 flex gap-x-4 bg-gray-200 w-fit p-2 rounded-full'>
+                <div className='sm:mt-12 mt-10 flex gap-x-4 bg-gray-200 w-fit p-2 rounded-full'>
                     <button
-                        className={`rounded-full px-5 py-2 ${selectedCategory === 'all' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
+                        className={`rounded-full sm:px-5 px-3 sm:py-2 py-1 sm:text-base xs:text-sm text-[13px] ${selectedCategory === 'all' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
                             }`}
                         onClick={() => setSelectedCategory("all")}
                     >
                         All
                     </button>
                     <button
-                        className={`rounded-full px-5 py-2 ${selectedCategory === 'fullstack' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
+                        className={`rounded-full sm:px-5 px-3 sm:py-2 py-1 sm:text-base xs:text-sm text-[13px] ${selectedCategory === 'fullstack' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
                             }`}
                         onClick={() => setSelectedCategory("fullstack")}
                     >
                         Full Stack
                     </button>
                     <button
-                        className={`rounded-full px-5 py-2 ${selectedCategory === 'frontend' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
+                        className={`rounded-full sm:px-5 px-3 sm:py-2 py-1 sm:text-base xs:text-sm text-[13px] ${selectedCategory === 'frontend' ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-white' : 'text-blue-600'
                             }`}
                         onClick={() => setSelectedCategory("frontend")}
                     >
@@ -40,7 +40,7 @@ const Work = () => {
                     </button>
                 </div>
             </div>
-            <div className='grid grid-cols-2 mt-20 gap-14'>
+            <div className='grid md:grid-cols-2 mt-20 gap-14'>
                 {filteredProjects.map((project) => (
                     <div
                         key={project.id}
