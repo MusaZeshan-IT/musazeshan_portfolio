@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/projects/:projectName" element={<ProjectDetails />} />
         <Route path="/*" element={<Error404 />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
