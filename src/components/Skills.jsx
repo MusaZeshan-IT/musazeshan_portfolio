@@ -31,7 +31,7 @@ const Skills = () => {
                         With 2+ years in full stack development, I craft seamless, scalable solutions from front-end to back-end.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div className="grid xs-custom:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     {skills.map((skill, index) => (
                         <div>
                             <div key={index} className="bg-blue-50 h-40 flex flex-col items-center justify-center p-6 rounded-[24px] text-center">
