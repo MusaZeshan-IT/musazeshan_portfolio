@@ -11,7 +11,7 @@ const Services = () => {
             </div>
             <div className='flex flex-col gap-14 px-10 mt-10'>
                 {/* Full Stack Development Services */}
-                <div className='flex justify-between gap-x-20 bg-blue-700 py-10 px-8 text-white'>
+                <div className='flex justify-between gap-x-20 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 py-10 px-8 text-white'>
                     <div className='flex w-[40%] gap-x-5 items-center'>
                         <p className='text-2xl font-bold'>01</p>
                         <h1 className='text-3xl font-bold'>Full Stack Development</h1>
