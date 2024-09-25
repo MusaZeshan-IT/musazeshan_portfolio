@@ -40,11 +40,11 @@ const Work = () => {
                     </button>
                 </div>
             </div>
-            <div className='grid md:grid-cols-2 mt-20 gap-14'>
+            <div className='grid md:grid-cols-2 mt-20 lg-custom:gap-14 lg:gap-9 md:gap-7 gap-10'>
                 {filteredProjects.map((project) => (
                     <div
                         key={project.id}
-                        className='bg-[rgb(26,22,66)] shadow-[0_0_20px_5px_rgb(217,200,253)] px-8 py-12 rounded-lg flex justify-center items-center'
+                        className='bg-[rgb(26,22,66)] shadow-[0_0_20px_5px_rgb(217,200,253)] lg-custom:px-8 lg-custom:py-12 lg:p-7 md:p-5 sm:p-9 xs:p-7 2xs-custom:p-5 2xs:p-4 p-3 rounded-lg flex justify-center items-center'
                     >
                         <img src={project.image} alt={project.title} />
                     </div>
