@@ -23,7 +23,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <section id="skills" className="pt-20">
+        <section id="skills" className="pt-28">
             <div className="mx-auto text-center bg-white 2xl:px-28 xl-custom:px-20 xl:px-16 lg-custom:px-14 lg:px-10 md:px-8 sm-custom:px-24 sm:px-16 xs-custom:px-14 xs:px-10 2xs-custom:px-8 2xs:px-6 px-4">
                 <h2 className="lg:text-[45px] md:text-[40px] sm:text-[35px] xs:text-[30px] text-[28px] leading-[1.05] font-bold text-blue-700 mb-6">My Skills</h2>
                 <div className='flex justify-center'>
