@@ -53,12 +53,12 @@ const Work = () => {
                             <img src={project.image} alt={project.title} />
                             {/* Overlay for project title */}
                             {hoveredProject === project.title && (
-                                <div className='absolute flex flex-col justify-center rounded-lg bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 text-white px-6 py-4 w-11/12 h-32'>
+                                <div className='absolute flex flex-col justify-center rounded-lg bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 text-white lg-custom:px-6 lg:px-5 lg:py-4 p-4 lg:w-11/12 2xs-custom:w-[94%] w-[96%] h-fit'>
                                     <div className='flex items-center justify-between'>
-                                        <h2 className='text-2xl font-bold'>{project.title}</h2>
-                                        <i className='fa-solid fa-chevron-right text-2xl'></i>
+                                        <h2 className='lg-custom:text-2xl lg:text-[22px] md:text-[18px] text-[16px] font-bold'>{project.title}</h2>
+                                        <i className='fa-solid fa-chevron-right lg-custom:text-2xl lg:text-[22px] md:text-[18px] text-[16px]'></i>
                                     </div>
-                                    <p className='mt-3'>{project.desc}</p>
+                                    <p className='lg-custom:mt-3 lg:mt-2 mt-1 lg-custom:text-base lg:text-[15px] md:text-[13px] text-[11px] leading-snug'>{project.desc}</p>
                                 </div>
                             )}
                         </div>
