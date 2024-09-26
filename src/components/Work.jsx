@@ -3,6 +3,7 @@ import ProjectsList from '../helpers/ProjectsList'; // Import the Projects List
 
 const Work = () => {
     const [selectedCategory, setSelectedCategory] = useState("all"); // Default state for "All"
+    const [hoveredProject, setHoveredProject] = useState(null); // State to manage hovered project
 
     // Function to filter projects based on the selected category
     const filteredProjects = ProjectsList.filter((project) => {
@@ -45,9 +46,21 @@ const Work = () => {
                     {filteredProjects.map((project) => (
                         <div
                             key={project.id}
-                            className='bg-[rgb(26,22,66)] shadow-[0_0_20px_5px_rgb(217,200,253)] lg-custom:px-8 lg-custom:py-12 lg:p-7 md:p-5 sm:p-9 xs:p-7 2xs-custom:p-5 2xs:p-4 p-3 rounded-lg flex justify-center items-center'
+                            className='relative cursor-pointer bg-[rgb(26,22,66)] shadow-[0_0_20px_5px_rgb(217,200,253)] lg-custom:px-8 lg-custom:py-12 lg:p-7 md:p-5 sm:p-9 xs:p-7 2xs-custom:p-5 2xs:p-4 p-3 rounded-lg flex justify-center items-end'
+                            onMouseEnter={() => setHoveredProject(project.title)} // Set hovered project
+                            onMouseLeave={() => setHoveredProject(null)} // Reset on leave
                         >
                             <img src={project.image} alt={project.title} />
+                            {/* Overlay for project title */}
+                            {hoveredProject === project.title && (
+                                <div className='absolute flex flex-col justify-center rounded-lg bg-gradient-to-r from-blue-500 via-blue-700 to-blue-800 text-white px-6 py-4 w-11/12 h-32'>
+                                    <div className='flex items-center justify-between'>
+                                        <h2 className='text-2xl font-bold'>{project.title}</h2>
+                                        <i className='fa-solid fa-chevron-right text-2xl'></i>
+                                    </div>
+                                    <p className='mt-3'>{project.desc}</p>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
