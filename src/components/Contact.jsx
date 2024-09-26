@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Contact = () => {
+
+    useEffect(() => {
+        const handleScrollToContact = () => {
+            const section = document.getElementById('contact');
+            const navbarHeight = document.querySelector('nav').offsetHeight || 0;
+            const offset = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+        };
+
+        handleScrollToContact();
+    }, []);
+
     return (
-        <section className="bg-[#f0f4ff] py-16 2xl:px-28 xl-custom:px-20 xl:px-16 lg-custom:px-14 lg:px-10 md:px-8 sm-custom:px-24 sm:px-16 xs-custom:px-14 xs:px-10 2xs-custom:px-8 2xs:px-6 px-4">
-            <div className="flex lg:flex-row flex-col items-center">
+        <section id="contact" className="pt-20">
+            <div className="bg-[#f0f4ff] py-16 2xl:px-28 xl-custom:px-20 xl:px-16 lg-custom:px-14 lg:px-10 md:px-8 sm-custom:px-24 sm:px-16 xs-custom:px-14 xs:px-10 2xs-custom:px-8 2xs:px-6 px-4 flex lg:flex-row flex-col items-center">
                 {/* Form Section */}
                 <div className="w-full lg:w-[60%] bg-white rounded-lg p-8 shadow-lg">
                     <h2 className="xs:text-3xl text-[26px] leading-[1.1] font-bold text-[#003366] xs:mb-4 mb-2">Let's work together!</h2>

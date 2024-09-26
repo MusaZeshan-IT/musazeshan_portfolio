@@ -7,7 +7,7 @@ import Contact from '../components/Contact';
 
 const HomePage = () => {
     return (
-        <div className='flex flex-col gap-y-20 mb-20'>
+        <div>
             <Hero />
             <Services />
             <Work />
