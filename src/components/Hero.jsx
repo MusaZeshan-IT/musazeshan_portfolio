@@ -1,5 +1,6 @@
 import React from 'react';
 import profileImage from '../assets/profileImage.jpeg';
+import resume from '../assets/musazeshan_resume.pdf';
 
 const Hero = () => {
     return (
@@ -22,7 +23,7 @@ const Hero = () => {
 
                     <div className='xl:mt-10 mt-8 flex items-center gap-x-5'>
                         {/* CV Download Button */}
-                        <a href="path-to-your-cv.pdf" className="xs:text-base 2xs-custom:text-sm text-[13px] tracking-[0.8px] bg-white border w-fit border-purple-600 text-blue-600 xs:px-6 px-4 xs:py-3 py-[10px] rounded-full font-body hover:bg-blue-600 hover:text-white hover:font-bold">
+                        <a href={resume} download="musazeshan_resume.pdf" className="xs:text-base 2xs-custom:text-sm text-[13px] tracking-[0.8px] bg-white border w-fit border-purple-600 text-blue-600 xs:px-6 px-4 xs:py-3 py-[10px] rounded-full font-body hover:bg-blue-600 hover:text-white hover:font-bold">
                             Download CV
                             <i className='fa-solid fa-download ml-2'></i>
                         </a>
