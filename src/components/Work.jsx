@@ -49,6 +49,7 @@ const Work = () => {
                             className='relative cursor-pointer bg-[rgb(26,22,66)] shadow-[0_0_20px_5px_rgb(217,200,253)] lg-custom:px-8 lg-custom:py-12 lg:p-7 md:p-5 sm:p-9 xs:p-7 2xs-custom:p-5 2xs:p-4 p-3 rounded-lg flex justify-center items-end'
                             onMouseEnter={() => setHoveredProject(project.title)} // Set hovered project
                             onMouseLeave={() => setHoveredProject(null)} // Reset on leave
+                            onClick={() => window.open(project.link, "_blank")}
                         >
                             <img src={project.image} alt={project.title} />
                             {/* Overlay for project title */}

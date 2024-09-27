@@ -11,13 +11,15 @@ const ProjectsList = [
         image: AP,
         type: "frontend",
         desc: "Developed a dynamic e-commerce site with advanced frontend features.",
+        link: "https://musazeshan-it.github.io/Audiophile/",
     },
     {
         id: 2,
         title: "Virtual Quran School",
         image: VQS,
         type: "fullstack",
-        desc: "Built a full-stack educational platform using Django and React."
+        desc: "Built a full-stack educational platform using Django and React.",
+        link: "https://virtualquranschool.netlify.app",
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ const ProjectsList = [
         image: QT,
         type: "frontend",
         desc: "Created a responsive translation platform with stunning design.",
+        link: "https://musazeshan-it.github.io/Quick-Translate/",
     },
 ];
 
