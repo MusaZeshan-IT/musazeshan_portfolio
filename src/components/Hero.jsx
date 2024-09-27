@@ -29,13 +29,13 @@ const Hero = () => {
 
                         {/* Social Links */}
                         <div className="flex gap-x-3">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
+                            <a href="https://www.instagram.com/musazeshan.it/" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
                                 <i className='fa-brands text-lg fa-instagram'></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
+                            <a href="https://www.linkedin.com/in/musa-zeshan-it" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
                                 <i className='fa-brands text-lg fa-linkedin-in'></i>
                             </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
+                            <a href="https://github.com/MusaZeshan-IT" target="_blank" rel="noopener noreferrer" className="grid place-items-center text-blue-600 rounded-full xs:h-9 h-8 xs:w-9 w-8 border border-purple-600 hover:bg-blue-600 hover:text-white">
                                 <i className='fa-brands text-lg fa-github'></i>
                             </a>
                         </div>
